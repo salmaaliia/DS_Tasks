@@ -114,6 +114,18 @@ else:
 
 #problem 4
 
+x = input()
+y = input()
+z = input()
+n = input()
+x = int(x)
+y = int(y)
+z = int(z)
+n = int(n)
+
+coordinates = [[i,j,k] for i in range(x+1) for j in range(y+1) for k in range(z+1) if i+j+k != n ]
+print(coordinates)
+
 #problem 5 
 def swap_case(s):
     result =""
